@@ -18,3 +18,10 @@ class Employe:
 #employe1.show_detail_employ()
 #employe1.change_salary(500)
 #employe1.show_detail_employ()
+
+
+
+
+    # methode permettant de générer l'adresse Email de l'employé
+    def generate_email_address(self):
+        print(f"Ladresse Email de {self.nom} est {self.prenom}.{self.nom}@entreprise.com")
