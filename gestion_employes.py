@@ -13,8 +13,9 @@ class Employe:
         self.salaire = new_salary
 
     # méthode permettant d'augmenter le salaire en pourcentage
-    def increase_salary_percentage(self):
-        pass
+    def increase_salary_percentage(self, percentage):
+        self.salaire = self.salaire * (percentage/100 + 1)
+        return self.salaire
 
     # methode permettant de générer l'adresse Email de l'employé
     def generate_email_address(self):
