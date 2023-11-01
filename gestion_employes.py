@@ -12,15 +12,9 @@ class Employe:
     def change_salary(self, new_salary):
         self.salaire = new_salary
 
-
-#employe1 = Employe("LUBA", "Merveille", 25000)
-
-#employe1.show_detail_employ()
-#employe1.change_salary(500)
-#employe1.show_detail_employ()
-
-
-
+    # méthode permettant d'augmenter le salaire en pourcentage
+    def increase_salary_percentage(self):
+        pass
 
     # methode permettant de générer l'adresse Email de l'employé
     def generate_email_address(self):
