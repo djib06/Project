@@ -10,7 +10,10 @@ class Employe:
 
     # methode permettant de definir ou de modofier le salaire d'un employé
     def change_salary(self, new_salary):
-        self.salaire = new_salary
+        if new_salary < 0:
+            print("Salaire negatif pas accepter!")
+        else:
+            self.salaire = new_salary
 
     # méthode permettant d'augmenter le salaire en pourcentage
     def increase_salary_percentage(self, percentage):
