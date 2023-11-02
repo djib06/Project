@@ -20,3 +20,7 @@ class Employe:
     # methode permettant de générer l'adresse Email de l'employé
     def generate_email_address(self):
         print(f"Ladresse Email de {self.nom} est {self.prenom}.{self.nom}@entreprise.com")
+
+    # méthode permettant de definir le poste de l'employé
+    def definir_poste(self, poste):
+        pass
