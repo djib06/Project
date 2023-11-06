@@ -14,7 +14,7 @@ class Employe:
             print(f"Le salaire de {prenom} a été mis à jour à {new_salary}")
         elif new_salary < self.salaire:
             print(f"La proposition de salaire pour {prenom} n'est pas une augmentation. Aucune mise à jour")
-        
+
         if new_salary < 0:
             print("Salaire negatif pas accepter!")
         else:
