@@ -9,7 +9,12 @@ class Employe:
         print(f"L'employe {self.nom} {self.prenom} a un salaire de {self.salaire} €.")
 
     # methode permettant de definir ou de modofier le salaire d'un employé
-    def change_salary(self, new_salary):
+    def change_salary(self, prenom, new_salary):
+        if new_salary > self.salaire:
+            print(f"Le salaire de {prenom} a été mis à jour à {new_salary}")
+        elif new_salary < self.salaire:
+            print(f"La proposition de salaire pour {prenom} n'est pas une augmentation. Aucune mise à jour")
+        
         if new_salary < 0:
             print("Salaire negatif pas accepter!")
         else:
